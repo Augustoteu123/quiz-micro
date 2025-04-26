@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Microbiología</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div id="start-container" class="quiz-container">
+    <h1>Quiz de Microbiología</h1>
+    <button id="start-button" class="start-btn">Iniciar Quiz</button>
+  </div>
+
+  <div id="theme-selection" class="quiz-container hide">
+    <h2>Selecciona un tema</h2>
+    <div class="btn-grid">
+      <button class="theme-btn" data-theme="tema1">Historia de la microbiología</button>
+      <button class="theme-btn" data-theme="tema2">Reinos biológicos</button>
+      <button class="theme-btn" data-theme="tema3">Observación de la célula bacteriana</button>
+      <button class="theme-btn" data-theme="tema4">Estructura de la célula bacteriana</button>
+      <button class="theme-btn" data-theme="tema5">Metabolismo y crecimiento bacteriano</button>
+      <button class="theme-btn" data-theme="tema6">Genética Bacteriana</button>
+      <button class="theme-btn" data-theme="tema7">Ingeniería genética</button>
+      <button class="theme-btn" data-theme="tema8">Esterilización y desinfección</button>
+      <button class="theme-btn" data-theme="todos">Todos los Temas</button>
+    </div>
+  </div>
+
+  <div id="question-container" class="quiz-container hide">
+    <div id="question"></div>
+    <div id="answer-buttons" class="btn-grid"></div>
+    <button id="next-button" class="next-btn">Siguiente</button>
+  </div>
+
+  <div id="result-container" class="quiz-container hide">
+    <h2 id="score-text"></h2>
+    <button id="restart-button" class="restart-btn">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
